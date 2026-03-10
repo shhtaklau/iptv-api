@@ -8,11 +8,11 @@ def rihou_playlist_m3u(url=url, output="playlist.m3u"):
     print(rec)
     txt = requests.get(url).text
     print(txt)
-    with open(f'rihou{date}.txt', 'w', encoding='utf-8')as f1:
+    with open(f'rihou/rihou{date}.txt', 'w', encoding='utf-8')as f1:
         f1.write(txt)
 
     # 转换并保存
-    with open(f'rihou{date}.m3u', 'w', encoding='utf-8') as f2:
+    with open(f'rihou/rihou{date}.m3u', 'w', encoding='utf-8') as f2:
         f2.write("#EXTM3U\n")
         group = ""
         for line in txt.splitlines():
