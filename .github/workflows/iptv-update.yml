@@ -28,8 +28,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
       # 4. 运行脚本
-      - name: Run generate_iptv_sources.py
-        run: python generate_iptv_sources.py
+      - name: Run iptv_script.py
+        run: python iptv_script.py
 
       # 5. 提交生成的 IPTV 文件
       - name: Commit and push IPTV files
