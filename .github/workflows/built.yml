@@ -1,6 +1,5 @@
 name: built
 on:
-  push:
   workflow_dispatch:
   
 jobs:
