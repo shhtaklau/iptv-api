@@ -22,6 +22,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add iptv4.txt iptv4.m3u
+          git add rihou*.txt rihou*.m3u
           git commit -m "Update"
           git push
