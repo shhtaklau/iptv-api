@@ -3,7 +3,7 @@ import requests
 # ====================== 【你只需要改这里】 ======================
 
 # 远程直播源地址
-REMOTE_URL = "https://freetv.fun/test_channels_original_new.txt?key=1831"
+REMOTE_URL = "https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt"
 
 # 固定保留的源
 RESERVE = """
@@ -84,4 +84,5 @@ with open(OUTPUT_M3U, "w", encoding="utf-8") as f:
     f.write(m3u)
 
 print("✅ 生成完成：", OUTPUT_TXT, OUTPUT_M3U)
+
 
