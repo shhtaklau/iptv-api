@@ -1,0 +1,27 @@
+name: rihou
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 1/3 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 设置Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: 安装依赖
+        run: pip install requests
+      - name: 运行脚本生成源
+        run: python rihou/rihou.py
+      - name: 提交并推送
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add iptv4.txt iptv4.m3u
+          git commit -m "Update"
+          git push
