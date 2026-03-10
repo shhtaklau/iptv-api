@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="广东卫视" group-title="广东频道",广东卫视
+https://example.com/gdtv.m3u8
+#EXTINF:-1 tvg-name="湖南卫视" group-title="卫视频道",湖南卫视
+https://example.com/hunan.m3u8
