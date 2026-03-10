@@ -3,7 +3,7 @@ import re
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-#from github import Github
+from github import Github
 import base64
 
 # 仓库配置
@@ -399,4 +399,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
