@@ -1,6 +1,5 @@
 name: 更新IPTV源
 on:
-  push:
   workflow_dispatch:
   
 jobs:
