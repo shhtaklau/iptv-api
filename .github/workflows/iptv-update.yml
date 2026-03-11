@@ -1,4 +1,4 @@
-name: 更新IPTV源
+name: run py
 on:
   workflow_dispatch:
   
