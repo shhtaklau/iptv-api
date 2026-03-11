@@ -4,19 +4,19 @@ now = datetime.now()
 date=now.date()
 url='http://rihou.cc:567/gggg.nzk/'
 rec=requests.get(url).url
-txt_time=f"更新时间:{date}，\n"
+txt_time=f"更新时间:{date}\n"
 def rihou_playlist_m3u(url=url, output="playlist.m3u"):
     print(rec)
     txt = txt_time+requests.get(url).text
     print(txt)
-    with open(f'rihou{date}.txt', 'w', encoding='utf-8')as f1:
+    with open(f'rihon/rihou{date}.txt', 'w', encoding='utf-8')as f1:
         f1.write(txt)
 
     with open(f'rihou.txt', 'w', encoding='utf-8')as f3:
         f3.write(txt)
 
     # 转换并保存
-    with open(f'rihou{date}.m3u', 'w', encoding='utf-8') as f2:
+    with open(f'riho/rihou{date}.m3u', 'w', encoding='utf-8') as f2:
         f2.write("#EXTM3U\n")
         group = ""
         for line in txt.splitlines():
