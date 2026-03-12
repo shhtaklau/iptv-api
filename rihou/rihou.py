@@ -29,7 +29,7 @@ def rihou_playlist_m3u(url=url, output="playlist.m3u"):
     with open(f'rihou{date}.txt', 'w', encoding='utf-8')as f1:
 
         f1.write(txt)
-     with open(f'rihou.txt', 'w', encoding='utf-8')as f3:
+    with open('rihou.txt', 'w', encoding='utf-8')as f3:
 
         f3.write(txt)
 
