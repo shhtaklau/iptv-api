@@ -67,7 +67,7 @@ def rihou_playlist_m3u(url=url, output="playlist.m3u"):
 
     with open('rihou.m3u', 'w', encoding='utf-8') as f4:
 
-        f4.write(f'#EXTM3U\n#EXTINF:-1 tvg-name="{name}"{group_part},{name}\n{url}\n')
+         f4.write(f'#EXTM3U\n#EXTINF:-1 tvg-name="{name}"{group_part},{name}\n{url}\n')
 
     
 
@@ -80,3 +80,4 @@ def rihou_playlist_m3u(url=url, output="playlist.m3u"):
 # 立即执行
 
 rihou_playlist_m3u()
+
